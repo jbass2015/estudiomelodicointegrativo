@@ -1,0 +1,34 @@
+<p id="notice"><%= notice %></p>
+
+<h2> Reservas asociadas: </h2>
+<% @reservas.each do |reserva| %>
+
+<strong>Hora tomada : </strong>
+<%= reserva.hora %>
+<br>
+</br>
+<p>
+  <strong>Salafull:</strong>
+  <%= @sala.salaFull %>
+</p>
+
+<p>
+  <strong>Salamedia:</strong>
+  <%= @sala.salaMedia %>
+</p>
+
+<p>
+  <strong>Salabasica:</strong>
+  <%= @sala.salaBasica %>
+</p>
+
+
+
+<% end %>
+
+<br>
+
+
+
+<%= link_to 'Edit', edit_sala_path(@sala) %> |
+<%= link_to 'Back', salas_path %>

@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  salaFull: MyString
+  salaMedia: MyString
+  salaBasica: MyString
+
+two:
+  salaFull: MyString
+  salaMedia: MyString
+  salaBasica: MyString

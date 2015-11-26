@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>EstudioMelodico</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+
+  <%= csrf_meta_tags %>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
+</head>
+<body>
+
+<%= render 'shared/navbar' %>
+<body style="background:##00695c">
+
+<div class="container">
+
+
+<%= yield %>
+
+<p class="notice"><%= notice %></p>
+<p class="alert"><%= alert %></p>
+<%= link_to 'Volver Inicio', root_path %>
+</div>
+</body>
+</html>
